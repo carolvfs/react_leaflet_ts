@@ -34,7 +34,8 @@ module.exports = {
   ],
   mode: 'development',
   devServer: {
-    port: 3000 // Change the port here
+    port: 3000,
+    historyApiFallback: true, // It makes the routes work properly
   },
   externals: {
     'dotenv': 'commonjs dotenv' // Exclude dotenv from the bundle
